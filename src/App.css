@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 49, 49);
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  min-width: 100vw;
+}
+.wrapper > * {
+  margin-block:3rem;
+}
+
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  color: wheat;
+}
+label{
+  font-size: 20px;
+  font-weight: 700;
+}
+input{
+  width: 400px;
+  padding: .5em;
+  outline: none;
+  background-color: unset;
+  border: none;
+  border-bottom: 2px solid hotpink;
+  margin-bottom: 4rem;
+  font-size:18px;
+  color:rgb(204, 145, 174)
+}
+input:focus
+ {
+  border-bottom:2px solid rgb(92, 1, 39);
+}
+
+.firstChild {
+  margin-top: 2rem;
+}
+.button {
+  height: 50px;
+  background-color: unset;
+  border: 2px solid hotpink;
+  border-radius: 10px;
+  outline: unset;
+  font-size: 24px;
+  font-weight: 700;
+  color:wheat
+}
+.lastChild {
+  margin-block: 2rem;
+}
+.button:hover{
+  background-color: hotpink;
+  border: 2px solid rgb(32, 49, 49);
+  color: black;
+  transition: all 300ms ease-in-out;
+}
+.fa-regular {
+  scale: .8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.fa-regular:hover{
+  color: hotpink;
+  scale: 1.2;
+  transition: all 300ms ease-in-out;
+}
+
+.user{
+  color: wheat;  font-size: 22px;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  /* border: 1px solid wheat; */
+  border-radius: 10px;
+  position: relative;
+  width: fit-content;
+  height: 100px;
+}
